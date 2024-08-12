@@ -1,0 +1,150 @@
+* {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */ 
+
+.header {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 33px;
+    padding: 32px 16px;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;    
+}
+
+
+.header__logo__text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 45px;
+    padding-right: 20px;
+}
+
+.header__nav__item {
+    font-size: 16px;
+}
+
+.header__nav__link {
+    font-size: 16px;
+}
+
+.header__cart {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 66px;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #212323;
+}
+
+.header__image {
+    border-radius: 50%;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+/* about me */ 
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    gap: 100px;
+    align-items: center;
+}
+
+.about-me h1 {
+    font-size: 64px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 24px;
+}
+.about-me__text {
+    width: 383px;
+    font-size: 16px;
+    color: #212323;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0!important;
+    overflow-wrap: break-word;
+    margin-bottom: 32px;
+}
+
+
+/* footer */ 
+
+.footer {
+    background-color: #222424;
+    width: 100%;
+    height: 300px;
+    padding: 20px 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer__first {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer__first__item {
+    color: white;
+}
+
+.footer__first__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer__first__socials:last-child {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.footer__second {
+    color: white;
+    list-style-type: none;
+}
+
+.footer__second ul {
+    list-style-type: none;
+    margin-top: 0;
+}
+.footer__second__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__second__item {
+    text-decoration: underline;
+}
