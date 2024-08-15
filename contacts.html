@@ -17,20 +17,31 @@
                 <li class="header__nav__item header__cart"><img src="./public/cart-icon.svg" alt="cart-icon" /> (0)</li>
             </ul>
         </header>
-        <main>
-            <div class="about-me">
-                <div>
-                    <h1>About me</h1>
-                    <p class="about-me__text">Hi there! My name is Agnė and I am a Lithuanian tattoo artist based in Berlin. How did I get here? </p>
-
-                    <p class="about-me__text">Once upon a time I finished my graphic design studies in Vilnius, Lithuania and thought about creating logos for a living, but life had a different plan for me and I moved to Barcelona, Spain.</p>
-                        
-                    <p class="about-me__text">Barcelonians inspired me with their passion for tattoos and soon I decided to not only get it for myself, but do it for others! After Barcelona I decided to move to Berlin - the ultimate capital of the Tattoo Art.</p>
-                        
-                    <p class="about-me__text">What's my style you may ask? I'm counting my 6th year in this tattoo business and I've dipped my toes in different styles, but eventually I found myself being fascinated the most with Irezumi, neo-traditional, ukiyo-e, flora and fauna-themed tattoos.</p>
-                </div>
-                <img src="./public/IMG_3069.jpg" alt="Anuar sex" width="560px" height="712px" />
-            </div>
+        <main class="contacts">
+            <h1>Get in touch</h1>
+            <form method="post">
+                <div class="contacts__element">
+                    <label for="name" >Name*</label>
+                    <input id="name" type="text" name="name" required placeholder="Your name" />
+                </div>            
+                <div class="contacts__element">
+                    <label for="lastName" >Last Name</label>
+                    <input id="lastName" type="text" name="lastName" placeholder="Your lastname"/>
+                </div>    
+                <div class="contacts__element">
+                    <label for="email" >Email*</label>
+                    <input id="email" type="email" name="email" required placeholder="Your email"/>
+                </div>   
+                <div class="contacts__element">
+                    <label for="phone" >Phone number</label>
+                    <input id="phone" type="tel" name="phone" placeholder="+7" />
+                </div>        
+                <div class="contacts__element">
+                    <label for="message" >Message*</label>
+                    <textarea id="message"  name="message" required rows="6" cols="60" placeholder="Enter your message"></textarea>
+                </div>       
+                <button type="submit">Submit</button>
+            </form>
         </main>
         <footer class="footer">
             <div class="footer__first">

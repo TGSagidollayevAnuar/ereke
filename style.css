@@ -5,6 +5,8 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /* header */ 
@@ -100,32 +102,83 @@ a {
 .tatoos__main {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 .tatoos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: calc(100% + 14px);
+    grid-column-gap: 15px;
+}
+
+.tatoos img {
+    margin-bottom: 14px;
+}
+
+/* contacts */
+
+.contacts {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
 }
 
-.tatoos__block-first {
+.contacts h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.contacts form {
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-direction: column;
+    gap: 22px;
 }
 
-.tatoos__block-second {
+.contacts__element {
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-direction: column;
+    gap: 5px;
 }
 
+.contacts__element label {
+    font-size: 16px;
+    color: #1d1e20;
+
+}
+
+.contacts__element input {
+    width: 605px;
+    height: 48px;
+    background-color: #E6E8EB6E;
+    border: none;
+    padding: 16px;
+}
+
+.contacts__element textarea {
+    width: 605px;
+    background-color: #E6E8EB6E;
+    border: none;
+    padding: 16px;
+}
+
+.contacts button {
+    width: 125px;
+    height: 50px;
+    padding: 14px 32px;
+    background-color: #E6BFAB;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+.contacts button:hover {
+    background-color: rgb(78, 80, 80);
+    cursor: pointer;
+}
 /* footer */ 
 
 .footer {
     background-color: #222424;
-    width: 100%;
     height: 300px;
     padding: 20px 180px;
     display: flex;
