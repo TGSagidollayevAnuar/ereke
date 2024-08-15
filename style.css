@@ -95,6 +95,31 @@ a {
     margin-bottom: 32px;
 }
 
+/* tatoos */
+
+.tatoos__main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.tatoos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tatoos__block-first {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tatoos__block-second {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
 /* footer */ 
 
