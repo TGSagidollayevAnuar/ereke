@@ -1,13 +1,18 @@
 <!DOCTYPE html />
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./style.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header class="header">        
             <div class="header__logo">
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=476,fit=crop,q=95/dJoE7g7E5gfWbqya/untitled_artwork-kopie-dOqrpv2bj0tj8j5L.jpg" alt="Ereke-aidaiyalmaid" width="238px" height="238px" />
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=476,fit=crop,q=95/dJoE7g7E5gfWbqya/untitled_artwork-kopie-dOqrpv2bj0tj8j5L.jpg" alt="Ereke-aidaiyalmaid" class="header__logo__main" />
+                <div class="header__logo__icons">
+                    <a class="header__nav__item header__cart__mobile"><img src="./public/cart-icon.svg" alt="cart-icon" class="header__logo__cart" /> (0)</a>
+                     <img src="./public/burger.png" alt="burger" class="header__logo__burger" />
+                </div>
             </div>        
             <ul class="header__nav">
                 <li class="header__nav__item"><a href="header__nav__link">About me</a></li>

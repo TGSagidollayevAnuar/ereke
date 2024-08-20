@@ -9,6 +9,11 @@ body {
     width: 100%;
 }
 
+@media (max-width: 640px) {    
+    main {
+        padding: 20px;
+    }
+}
 /* header */ 
 
 .header {
@@ -26,6 +31,15 @@ body {
     gap: 5px;    
 }
 
+.header__logo__main {
+    width: 238px;
+    height: 238px
+}
+
+
+.header__logo__cart {
+    display: none;
+}
 
 .header__logo__text {
     font-size: 20px;
@@ -69,6 +83,47 @@ a {
     padding: 5px;
 }
 
+@media (max-width: 640px) {    
+    .header__logo {
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo__main {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header__cart__mobile {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .header__logo__icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header__logo__cart {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .header__logo__burger {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 /* about me */ 
 
 .about-me {
@@ -87,7 +142,6 @@ a {
     margin-bottom: 24px;
 }
 .about-me__text {
-    width: 383px;
     font-size: 16px;
     color: #212323;
     font-weight: 400;
@@ -95,6 +149,24 @@ a {
     margin-top: 0!important;
     overflow-wrap: break-word;
     margin-bottom: 32px;
+}
+
+@media (max-width: 640px) {    
+    .about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap:10px
+    }
+
+    .about-me img {
+        width: 328px;
+        height: auto;
+    }
+
+    .about-me h1 {
+        font-size: 32px;
+    }
 }
 
 /* tatoos */
@@ -225,4 +297,16 @@ a {
 
 .footer__second__item {
     text-decoration: underline;
+}
+
+@media (max-width: 640px) {    
+    .footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .footer__second__list {
+        padding: 0;
+    }
 }
